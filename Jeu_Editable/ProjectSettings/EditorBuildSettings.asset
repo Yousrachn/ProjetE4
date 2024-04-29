@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 6f1187ea4ab8ecf4e8382712663d0e76
+  - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: a4436ef79ee150040a413db1d4029ed9
+  - enabled: 1
+    path: Assets/Scenes/3D-HUB/SampleScene.unity
+    guid: 774e4825362574c76acb25321328fe94
+  - enabled: 1
+    path: Assets/Scenes/Mouse/level_1_souris.unity
+    guid: 61629f72f0b764e229be07ecb7d175e5
+  - enabled: 1
+    path: Assets/Scenes/Mouse/level_2_souris.unity
+    guid: 90160612a3719ce44b646c4ea923565d
+  - enabled: 1
+    path: Assets/Scenes/Mouse/level_3_souris.unity
+    guid: c9d47d0ae0432a54f9d50407106b4dad
+  - enabled: 1
+    path: Assets/Scenes/Mouse/mini_jeux_1.unity
+    guid: 2bcd6aa85d4fae445b2b21fcd04295d2
+  - enabled: 1
+    path: Assets/Scenes/Mouse/mini_jeux_1_2.unity
+    guid: e79a0c740c0840b4fa64133f604cf03c
+  - enabled: 1
+    path: Assets/Scenes/Mouse/mini_jeux_1_3.unity
+    guid: efe83e2e97d0d4946941809bea2091ca
+  - enabled: 1
+    path: Assets/Scenes/Area-51/Intro.unity
+    guid: 5117dd31b04e64d149548b276950818b
+  - enabled: 1
+    path: Assets/Scenes/Area-51/Level_0.unity
+    guid: 89881e4cd6d16604b86f2f33c1081001
+  - enabled: 1
+    path: Assets/Scenes/Area-51/Level_1.unity
+    guid: e43eba200878f4846a1b419e6134d38f
+  - enabled: 1
+    path: Assets/Scenes/Area-51/Level_2.unity
+    guid: d21e0b54a0f37434a99db74fc86bfdbc
+  - enabled: 1
+    path: Assets/Scenes/Area-51/Level_3.unity
+    guid: 35d9292be2ecc004ebf0fdd7a327c1d1
+  - enabled: 0
+    path: Assets/Scenes/Area-51/Level 0.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Area-51/Level 1.unity
+    guid: bd678079e252d40d8af279001de2f90a
+  - enabled: 1
+    path: Assets/Scenes/Area-51/Terminal.unity
+    guid: ca383f68c3ac0444e8c0c7b99c88bd49
+  - enabled: 1
+    path: Assets/Scenes/Area-51/PC Server.unity
+    guid: 35e9725b9cbe24e68968c5dfd889f460
+  - enabled: 1
+    path: Assets/Scenes/FinDeJeu.unity
+    guid: 80eb164a837c29e44ac88ba3bc319c2c
+  m_configObjects: {}
