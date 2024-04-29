@@ -71,6 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-*DreamForestTree/Materials/ClearSky.psd
-*Library/ArtifactDB
-*Library/PackageCache/com.unity.burst@1.8.12/.Runtime/libburst-llvm-16.dylib
+Jeu_Editable/Assets/Assets2/DreamForestTree/Materials/ClearSky.psd
+Jeu_Editable/Library/ArtifactDB
+Jeu_Editable/Library/PackageCache/com.unity.burst@1.8.12/.Runtime/libburst-llvm-16.dylib
