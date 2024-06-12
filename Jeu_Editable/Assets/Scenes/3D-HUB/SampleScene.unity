@@ -1747,7 +1747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dda79f440cb84e4dab7d2a9c5a59f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: level_1_crypto
+  sceneName: Intro_crypto
 --- !u!1 &593813460
 GameObject:
   m_ObjectHideFlags: 0
