@@ -9,6 +9,7 @@ public class InteractionTerminal : MonoBehaviour
 {
     public float interactionDistance = 3f;
     private Transform player;
+    public GameObject interactionText;
 
 
     void Start()
@@ -20,9 +21,17 @@ public class InteractionTerminal : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(player.position, transform.position);
-        if (distance <= interactionDistance && Input.GetKeyDown(KeyCode.E))
+        if (distance <= interactionDistance )
+
+        {   
+            interactionText.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E)){
+                LoadTerminalScene();
+            }
+        }
+        else
         {
-            LoadTerminalScene();
+            interactionText.SetActive(false);
         }
     }
 
