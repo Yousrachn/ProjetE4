@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.92462236, y: 0.92261714}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.8860626, y: -1.1498108}
+  m_AnchoredPosition: {x: 4.8860474, y: -1.1498108}
   m_SizeDelta: {x: 14.096603, y: 2.9869995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &41019165
@@ -422,7 +422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.9314893, y: 0.91300005}
   m_AnchorMax: {x: 1, y: 0.98669153}
-  m_AnchoredPosition: {x: 5, y: 6.2444}
+  m_AnchoredPosition: {x: 5, y: 6.244385}
   m_SizeDelta: {x: 29.7184, y: 12.4888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369922566
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 0.7165637, b: 0.043137252, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -530,8 +530,8 @@ GameObject:
   - component: {fileID: 438653397}
   - component: {fileID: 438653396}
   - component: {fileID: 438653395}
-  - component: {fileID: 438653394}
   - component: {fileID: 438653393}
+  - component: {fileID: 438653398}
   m_Layer: 0
   m_Name: Mail2
   m_TagString: Untagged
@@ -584,18 +584,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &438653394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438653392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d50aa3742aea30409b50ae0a9fb2358, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &438653395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,6 +663,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.852}
+--- !u!114 &438653398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438653392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad89e16b4cdc577419d26d1d8e0e9a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &641822219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1047,7 @@ GameObject:
   - component: {fileID: 1168064314}
   - component: {fileID: 1168064318}
   - component: {fileID: 1168064317}
-  - component: {fileID: 1168064316}
+  - component: {fileID: 1168064319}
   m_Layer: 0
   m_Name: Mail1
   m_TagString: Untagged
@@ -1122,18 +1122,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.056}
---- !u!114 &1168064316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168064313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad89e16b4cdc577419d26d1d8e0e9a97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1168064317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1179,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1168064319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168064313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d50aa3742aea30409b50ae0a9fb2358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1223371815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2828102, y: 0.2097362}
   m_AnchorMax: {x: 0.60678476, y: 0.82900006}
-  m_AnchoredPosition: {x: 28.533325, y: -4.936386}
+  m_AnchoredPosition: {x: 28.533325, y: -4.936371}
   m_SizeDelta: {x: 265.07, y: 22.344055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344427872
@@ -1639,7 +1639,8 @@ MonoBehaviour:
     lines:
     - Ici PandaOne
     - "Tu as r\xE9ussi \xE0 trouver les bons choix, maintenant, assemble les"
-    - et retrouve le bon mail de phishing dans la salle.
+    - "et retrouve le bon mail de phishing et mets-le dans la bo\xEEte."
+    - "Astuce : Lis les mails gr\xE2ce aux panneaux."
 --- !u!114 &1557229087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2235,7 +2236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2828102, y: 0.2097362}
   m_AnchorMax: {x: 0.60678476, y: 0.82900006}
-  m_AnchoredPosition: {x: 28.533325, y: -4.936386}
+  m_AnchoredPosition: {x: 28.533325, y: -4.936371}
   m_SizeDelta: {x: 265.07, y: 22.344055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1781482414
@@ -2258,7 +2259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 16afc935d7bc1474694b835923393d29, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7eb0de661afb6cb429e918ccad32a520, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2429,7 +2430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2828102, y: 0.2097362}
   m_AnchorMax: {x: 0.60678476, y: 0.82900006}
-  m_AnchoredPosition: {x: 28.533325, y: -4.936386}
+  m_AnchoredPosition: {x: 28.533325, y: -4.936371}
   m_SizeDelta: {x: 265.07, y: 22.344055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830920304
@@ -3425,7 +3426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2828102, y: 0.2097362}
   m_AnchorMax: {x: 0.60678476, y: 0.82900006}
-  m_AnchoredPosition: {x: 28.533325, y: -4.936386}
+  m_AnchoredPosition: {x: 28.533325, y: -4.936371}
   m_SizeDelta: {x: 265.07, y: 22.344055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2062219156
@@ -3448,7 +3449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7eb0de661afb6cb429e918ccad32a520, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16afc935d7bc1474694b835923393d29, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
