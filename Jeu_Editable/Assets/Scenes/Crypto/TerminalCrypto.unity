@@ -1471,6 +1471,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4942547065621314654, guid: c65fc0e0c5ecb204b94877c3623e0057,
+        type: 3}
+      propertyPath: m_Text
+      value: 'REPONSE DU TERMINAL
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 6739123081919362756, guid: c65fc0e0c5ecb204b94877c3623e0057,
         type: 3}
       propertyPath: m_AnchorMax.y
