@@ -10,6 +10,7 @@ public class InteractionTerminal : MonoBehaviour
     public float interactionDistance = 3f;
     private Transform player;
     public GameObject interactionText;
+    public string SceneName;
 
 
     void Start()
@@ -38,7 +39,7 @@ public class InteractionTerminal : MonoBehaviour
 
     void LoadTerminalScene()
     {
-        SceneManager.LoadScene("TerminalCrypto");
+        SceneManager.LoadScene(SceneName);
     }
 }
 

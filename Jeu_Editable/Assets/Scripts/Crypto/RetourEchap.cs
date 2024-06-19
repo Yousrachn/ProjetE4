@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class RetourEchap : MonoBehaviour
 {
+    public string SceneName;
    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene("level_1_crypto");
+            SceneManager.LoadScene(SceneName);
         }
     }
 }

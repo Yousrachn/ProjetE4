@@ -25,28 +25,29 @@ public class InterpreterCrypto : MonoBehaviour
         response.Clear();
         string[] args = userInput.Split();
 
-        if (args.Length == 0)
-        {
-            response.Add("Commande non reconnue. Entrer help pour avoir la liste des commandes.");
-            return response;
-        }
+        // if (args.Length == 0)
+        // {
+        //     response.Add("Commande non reconnue. Entrer help pour avoir la liste des commandes.");
+        //     return response;
+        // }
 
         if( args[0] == "help")
         {
             ListEntry("help","pour avoir la liste des commandes disponile");
             ListEntry("ls","afficher l'historique des mail'");
             ListEntry("dl + [filename]","télécharger le mail ");
+            return response;
 
         }
 
-        if ( args[0] == "ls")
+        else if ( args[0] == "ls")
         {
             response.Add("Historique des mails: 24_05_2024, 25_05_2024, 30_04_2024, 02_06_2024");
             return response;
         }
 
         
-        if (args[0] == "dl") {
+        else if (args[0] == "dl") {
             if (args.Length >= 2) {
                 if (args[1] == "24_05_2024")
                 {
