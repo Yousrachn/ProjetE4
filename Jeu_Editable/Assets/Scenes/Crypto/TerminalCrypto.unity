@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 274661631}
   - component: {fileID: 274661636}
   - component: {fileID: 274661635}
+  - component: {fileID: 274661638}
   - component: {fileID: 274661637}
   m_Layer: 5
   m_Name: Canvas
@@ -413,9 +414,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 274661630}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270a7adf7415b403084ec37daaceaf22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &274661638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274661630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee5a0a88ca9136a45855c82f6e5dab44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  downloadManager: {fileID: 274661637}
 --- !u!1 &279216748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,8 +1509,17 @@ PrefabInstance:
     - target: {fileID: 4942547065621314654, guid: c65fc0e0c5ecb204b94877c3623e0057,
         type: 3}
       propertyPath: m_Text
-      value: Bienvenue dans le terminal. Pour afficher la liste des commande entrer
-        "help".
+      value: 'CryptoLand_Terminal : Pour afficher la liste des commande entrer "help".'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942547065621314654, guid: c65fc0e0c5ecb204b94877c3623e0057,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942547065621314654, guid: c65fc0e0c5ecb204b94877c3623e0057,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6739123081919362756, guid: c65fc0e0c5ecb204b94877c3623e0057,
         type: 3}
@@ -1507,6 +1530,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6739123081919362756, guid: c65fc0e0c5ecb204b94877c3623e0057,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1098.2734
       objectReference: {fileID: 0}
     - target: {fileID: 6739123081919362756, guid: c65fc0e0c5ecb204b94877c3623e0057,
         type: 3}
