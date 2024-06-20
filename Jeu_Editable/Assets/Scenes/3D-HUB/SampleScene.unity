@@ -1397,7 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dda79f440cb84e4dab7d2a9c5a59f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: level_0
+  sceneName: Intro
 --- !u!135 &318957041
 SphereCollider:
   m_ObjectHideFlags: 0
