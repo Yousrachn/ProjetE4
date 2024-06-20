@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class PNJInteraction : MonoBehaviour
 {
@@ -10,16 +11,18 @@ public class PNJInteraction : MonoBehaviour
     public string[] dialogues; // Tableau des dialogues du PNJ
     private int currentDialogueIndex = 0;
     private bool isPlayerInRange = false;
-
+    private bool isDialogueActive = false;
+    public Image dialogueBackground;
     void Start()
     {
         // Assurez-vous que le TextMeshPro est référencé correctement
         if (dialogueText == null)
         {
-            Debug.LogError("Référence manquante au TextMeshPro pour le dialogue.");
+            Debug.LogError("Référence manquante au TextMeshPro pour le dialogue." + gameObject.name);
             enabled = false; // Désactive le script si le TextMeshPro n'est pas configuré correctement
         }
         dialogueText.text = ""; // Assurez-vous que le texte de dialogue est vide au démarrage
+        dialogueBackground.gameObject.SetActive(false);
     }
 
     void Update()
@@ -27,11 +30,22 @@ public class PNJInteraction : MonoBehaviour
         // Vérifiez si la touche E est pressée et si le joueur est à portée
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            StartDialogue();
+            if( !isDialogueActive)
+            {
+                StartDialogue();
+            }
+            else 
+            {
+                DisplayNextDialogue();
+            }
         }
         if (Input.GetKeyDown(KeyCode.C))
         {
             CopyDialogueToClipboard();
+        }
+        if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
+        {
+            DisplayNextDialogue();
         }
     }
 
@@ -41,6 +55,7 @@ public class PNJInteraction : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInRange = true;
+            Debug.Log("Player entered range of " + gameObject.name);
         }
     }
 
@@ -51,11 +66,13 @@ public class PNJInteraction : MonoBehaviour
         {
             isPlayerInRange = false;
             EndDialogue();
+            Debug.Log("Player exited range of " + gameObject.name);
+
         }
     }
 
     // Méthode pour démarrer et afficher le dialogue
-    public void StartDialogue()
+    public void DisplayNextDialogue()
     {
         if (currentDialogueIndex < dialogues.Length)
         {
@@ -68,11 +85,25 @@ public class PNJInteraction : MonoBehaviour
         }
     }
 
+    public void StartDialogue()
+        {
+            isDialogueActive = true;
+            currentDialogueIndex = 0;
+            dialogueBackground.gameObject.SetActive(true);
+            DisplayNextDialogue();
+            Debug.Log("Dialogue started with" + gameObject.name);
+
+        }
+    
+
     // Méthode pour mettre fin au dialogue
     public void EndDialogue()
     {
         dialogueText.text = ""; // Efface le texte du dialogue
-        currentDialogueIndex = 0; // Réinitialise l'index du dialogue
+        dialogueBackground.gameObject.SetActive(false);
+        isDialogueActive = false;
+        Debug.Log("Dialogue ended with " + gameObject.name);
+
     }
 
     public void CopyDialogueToClipboard()

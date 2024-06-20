@@ -6,7 +6,7 @@ public class Character : MonoBehaviour
 
 
 {
-    public float speed = 20f;
+    public float speed = 5f;
     Rigidbody2D rb;
     Vector2 dir;
     Animator animator;
@@ -35,7 +35,7 @@ public class Character : MonoBehaviour
         {
             animator.SetBool("IsWalking", false);
         }
-        rb.MovePosition(rb.position + dir * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + dir * speed* Time.fixedDeltaTime);
     }
 }
 
