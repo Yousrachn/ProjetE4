@@ -13,6 +13,7 @@ public class PNJInteraction : MonoBehaviour
     private bool isPlayerInRange = false;
     private bool isDialogueActive = false;
     public Image dialogueBackground;
+    public GameObject interactionText;
     void Start()
     {
         // Assurez-vous que le TextMeshPro est référencé correctement
@@ -28,16 +29,26 @@ public class PNJInteraction : MonoBehaviour
     void Update()
     {
         // Vérifiez si la touche E est pressée et si le joueur est à portée
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
-        {
-            if( !isDialogueActive)
+        if (isPlayerInRange)
+         
+        {   
+            interactionText.SetActive(true);
+            if(Input.GetKeyDown(KeyCode.E))
             {
-                StartDialogue();
-            }
-            else 
-            {
+                if( !isDialogueActive)
+                {
+                    StartDialogue();
+                }
+                else 
+                {
                 DisplayNextDialogue();
+                }
             }
+        }
+
+        if (!isPlayerInRange)
+        {
+            interactionText.SetActive(false);
         }
         if (Input.GetKeyDown(KeyCode.C))
         {

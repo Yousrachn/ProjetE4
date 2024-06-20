@@ -20,16 +20,11 @@ public class InterpreterCrypto : MonoBehaviour
     };
 
     List<string> response = new List<string>();
+    public DownloadManager downloadManager;
     public List<string> Interpret(string userInput)
     {
         response.Clear();
         string[] args = userInput.Split();
-
-        // if (args.Length == 0)
-        // {
-        //     response.Add("Commande non reconnue. Entrer help pour avoir la liste des commandes.");
-        //     return response;
-        // }
 
         if( args[0] == "help")
         {
@@ -42,73 +37,70 @@ public class InterpreterCrypto : MonoBehaviour
 
         else if ( args[0] == "ls")
         {
-            response.Add("Historique des mails: 24_05_2024, 25_05_2024, 30_04_2024, 02_06_2024");
+            response.Add("Historique des mails: 11_05_2024, 12_05_2024, 16_05_2024, 20_05_2024");
             return response;
         }
 
         
-        else if (args[0] == "dl") {
-            if (args.Length >= 2) {
-                if (args[1] == "24_05_2024")
+        else if (args[0] == "dl") 
+        {
+            if (args.Length >= 2) 
+            {
+                if (args[1] == "11_05_2024") 
                 {
-                    string url = "https://github.com/b8remy/projet_E4_jeu_cyber/blob/Second/Fichiers/st%C3%A9ganographie_champ_de_force.zip";
+                    string url = "https://github.com/Yousrachn/ProjetE4/raw/main/Fichiers/11_05_2024.pdf";
                     DownloadManager DownloadManager = gameObject.GetComponent<DownloadManager>();
                     DownloadManager.DownloadURLfrom(url);
-
-                    response.Add("Opération réussie");
-                    return response;    
-                }
-                else if (args[1] == "25_05_2024")
-                {
-                    string url = "https://github.com/b8remy/projet_E4_jeu_cyber/blob/Second/Fichiers/indice_steganographie_champ_de_force.zip";
-                    DownloadManager DownloadManager = gameObject.GetComponent<DownloadManager>();
-                    DownloadManager.DownloadURLfrom(url);
-
                     response.Add("Opération réussie");
                     return response;
                 }
 
-                else if (args[1] == "30_04_2024")
-                {
-                    string url = "https://github.com/b8remy/projet_E4_jeu_cyber/blob/Second/Fichiers/indice_steganographie_champ_de_force.zip";
+                else if (args[1] == "12_05_2024") {
+                    string url = "https://github.com/Yousrachn/ProjetE4/raw/main/Fichiers/12_05_2024.pdf";
                     DownloadManager DownloadManager = gameObject.GetComponent<DownloadManager>();
                     DownloadManager.DownloadURLfrom(url);
-
                     response.Add("Opération réussie");
                     return response;
                 }
 
-                else if (args[1] == "02_06_2024")
-                {
-                    string url = "https://github.com/b8remy/projet_E4_jeu_cyber/blob/Second/Fichiers/indice_steganographie_champ_de_force.zip";
+                else if (args[1] == "16_05_2024") {
+                    string url = "https://github.com/Yousrachn/ProjetE4/raw/main/Fichiers/16_05_2024.pdf";
                     DownloadManager DownloadManager = gameObject.GetComponent<DownloadManager>();
                     DownloadManager.DownloadURLfrom(url);
-
                     response.Add("Opération réussie");
                     return response;
                 }
+
+                else if (args[1] == "20_05_2024") {
+                    string url = "https://github.com/Yousrachn/ProjetE4/raw/main/Fichiers/20_05_2024.pdf";
+                    DownloadManager DownloadManager = gameObject.GetComponent<DownloadManager>();
+                    DownloadManager.DownloadURLfrom(url);
+                    response.Add("Opération réussie");
+                    return response;
+                }
+
                 else
                 {
-                    response.Add("Fichier inexistant.");
+                    response.Add("Le fichier spécifié n'existe pas");
                     return response;
-
                 }
             }
+                    
             else
             {
                 response.Add("Commande incomplète.");
                 return response;
             }
-        
-    
         }
-        else {
+        
+        else 
+        {
             
-                response.Add("Commande non reconnue. Entrer help pour avoir la liste des commandes.");
-                return response;
-            }
-
+            response.Add("Commande non reconnue. Entrer help pour avoir la liste des commandes.");
+            return response;
+        }
     }
+
 
     public string ColorString(string s,string color)
     {
