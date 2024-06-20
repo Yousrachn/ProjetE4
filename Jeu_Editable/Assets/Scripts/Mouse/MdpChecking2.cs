@@ -8,12 +8,12 @@ public class PasswordInteraction4 : MonoBehaviour
 {
     public GameObject passwordPanel;
     public TMP_InputField passwordInput;
-    public string correctPassword = "secret"; // Le mot de passe à vérifier
+    public string correctPassword = "secret"; // Le mot de passe ï¿½ vï¿½rifier
     public Button enterButton;
 
     void Start()
     {
-        // Assurez-vous que le bouton "Enter" est lié à la fonction CheckPassword
+        // Assurez-vous que le bouton "Enter" est liï¿½ ï¿½ la fonction CheckPassword
         enterButton.onClick.AddListener(CheckPassword);
     }
 
@@ -39,13 +39,13 @@ public class PasswordInteraction4 : MonoBehaviour
         Time.timeScale = 1f;
         yield return new WaitForSeconds(1); // Attendre 2 secondes
         passwordPanel.SetActive(false);
-        SceneManager.LoadScene("SampleScene"); // Changez "NomDeLaNouvelleScene" par le nom de votre scène
+        SceneManager.LoadScene("Fin_Mouse"); // Changez "NomDeLaNouvelleScene" par le nom de votre scï¿½ne
     }
 
     IEnumerator ClearInputField()
     {
         yield return new WaitForSeconds(1); // Attendre 2 secondes
         passwordInput.text = ""; // Efface le texte
-        passwordInput.image.color = Color.white; // Remet la couleur par défaut
+        passwordInput.image.color = Color.white; // Remet la couleur par dï¿½faut
     }
 }
