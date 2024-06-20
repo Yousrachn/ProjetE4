@@ -31,13 +31,13 @@ public class exitscript : MonoBehaviour
 
     public void Close()
     {
-        exitPanel.SetActive(false); // Désactive le Canvas
-        Time.timeScale = 1f; // Remet le temps à la normale pour reprendre le jeu
+        exitPanel.SetActive(false); // Dï¿½sactive le Canvas
+        Time.timeScale = 1f; // Remet le temps ï¿½ la normale pour reprendre le jeu
     }
 
     IEnumerator ChangeScene()
     {
         yield return new WaitForSeconds(2); // Attendre 2 secondes
-        SceneManager.LoadScene("SampleScene"); // Changez "NomDeLaNouvelleScene" par le nom de votre scène
+        SceneManager.LoadScene("SampleScene 1"); // Changez "NomDeLaNouvelleScene" par le nom de votre scï¿½ne
     }
 }
