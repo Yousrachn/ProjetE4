@@ -37,16 +37,16 @@ public class mj1 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (other.CompareTag("Coin"))
+ 
+        if (other.CompareTag("Coin" ))
         {
             score++;
             scoreText.text = "Score: " + score.ToString();
-            if (score >= 10) // Vérifie si le joueur a collecté toutes les pièces
+            if (score >= 10) // Vï¿½rifie si le joueur a collectï¿½ toutes les piï¿½ces
             {
                 EndGameWin();
             }
-            Destroy(other.gameObject); // Détruit la pièce lorsque le joueur la touche
+            Destroy(other.gameObject); // Dï¿½truit la piï¿½ce lorsque le joueur la touche
             Debug.Log("Coin touched by player!");
         }
     }
