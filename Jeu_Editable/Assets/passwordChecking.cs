@@ -2,18 +2,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
-using TMPro;
+using TMPro; 
 
 public class passwordChecking : MonoBehaviour
 {
     public GameObject passwordPanel;
     public TMP_InputField passwordInput;
-    public string correctPassword; // Le mot de passe à vérifier
+    public string correctPassword; // Le mot de passe ï¿½ vï¿½rifier
     public Button enterButton;
+    public string sceneName;
 
     void Start()
     {
-        // Assurez-vous que le bouton "Enter" est lié à la fonction CheckPassword
+        // Assurez-vous que le bouton "Enter" est liï¿½ ï¿½ la fonction CheckPassword
         enterButton.onClick.AddListener(CheckPassword);
     }
 
@@ -39,13 +40,13 @@ public class passwordChecking : MonoBehaviour
         Time.timeScale = 1f;
         yield return new WaitForSeconds(1); // Attendre 2 secondes
         passwordPanel.SetActive(false);
-        Application.Quit();
+        SceneManager.LoadScene(sceneName);
     }
 
     IEnumerator ClearInputField()
     {
         yield return new WaitForSeconds(1); // Attendre 2 secondes
         passwordInput.text = ""; // Efface le texte
-        passwordInput.image.color = Color.white; // Remet la couleur par défaut
+        passwordInput.image.color = Color.white; // Remet la couleur par dï¿½faut
     }
 }

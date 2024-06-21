@@ -1,23 +1,32 @@
 using UnityEngine;
-
 public class password : MonoBehaviour
 {
     public GameObject passwordPanel; // Assurez-vous d'assigner le Canvas dans l'inspecteur
-    private bool isPlayerNear = false; // Pour suivre si le joueur est près du GameObject spécifique
+    private bool isPlayerNear = false; // Pour suivre si le joueur est prï¿½s du GameObject spï¿½cifique
+    public GameObject interactionText;
 
     void Start()
     {
-        // Optionnel: Désactivez le Canvas au début si pas déjà fait dans l'éditeur
+        // Optionnel: Dï¿½sactivez le Canvas au dï¿½but si pas dï¿½jï¿½ fait dans l'ï¿½diteur
         passwordPanel.SetActive(false);
     }
 
     void Update()
     {
-        // Vérifiez si le joueur est près et appuie sur "H"
-        if (isPlayerNear && Input.GetKeyDown(KeyCode.E))
+        // Vï¿½rifiez si le joueur est prï¿½s et appuie sur "H"
+        if (isPlayerNear)
         {
+            interactionText.SetActive(true);
+            if(Input.GetKeyDown(KeyCode.E))
+         
+            {
             passwordPanel.SetActive(true);
             Time.timeScale = 0f;
+            }
+        }
+        else
+        {
+            interactionText.SetActive(false);
         }
     }
 
@@ -40,8 +49,8 @@ public class password : MonoBehaviour
 
     public void CloseCanvasAndResumeGame()
     {
-        passwordPanel.SetActive(false); // Désactive le Canvas
-        Time.timeScale = 1f; // Remet le temps à la normale pour reprendre le jeu
+        passwordPanel.SetActive(false); // Dï¿½sactive le Canvas
+        Time.timeScale = 1f; // Remet le temps ï¿½ la normale pour reprendre le jeu
     }
 
 }
