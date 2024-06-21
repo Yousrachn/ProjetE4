@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -286,7 +286,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "F\xE9licitations, gr\xE2ce \xE0 ta pers\xE9v\xE9rance, tes talents de
+    d\xE9cryptage et de recherche, tu as brillamment surmont\xE9 les obstacles de
+    notre mission top secr\xE8te. Tu as r\xE9ussi \xE0 t'infiltrer dans la zone 51,
+    \xE0 lib\xE9rer notre ami et \xE0 en ressortir indemne. Pour te r\xE9compenser
+    voici quelque chose qui devrait te servir :  terj . "
 --- !u!222 &722943883
 CanvasRenderer:
   m_ObjectHideFlags: 0
