@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 38, y: 175}
+  m_SizeDelta: {x: 2712.2744, y: 1896.7388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &369902660
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1287524475, guid: b600a84ef3ded5d41a7a5c04ce1838b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b507581d56cf6904f99380f809e24fbf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -398,7 +398,7 @@ MonoBehaviour:
   - "Bonne continuation pour la suite et essayez de ne plus vous retrouver bloqu\xE9
     ;)"
   textSpeed: 0.05
-  SceneToLoad: SampleScene
+  SceneToLoad: Main Menu
 --- !u!1 &1344789716
 GameObject:
   m_ObjectHideFlags: 0
