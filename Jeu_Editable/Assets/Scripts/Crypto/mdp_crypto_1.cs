@@ -9,6 +9,7 @@ public class mdp_crypto_1 : MonoBehaviour
     public InputField[] digitFields; // Les champs pour les 4 chiffres
     public string correctPassword = "7643"; // Le mot de passe correct
     private int currentFieldIndex = 0;
+    public string SceneName;
     void Start()
     {
         // Ajouter des listeners à chaque InputField pour détecter les changements
@@ -95,7 +96,7 @@ public class mdp_crypto_1 : MonoBehaviour
 
     void LoadNextScene()
     {
-        SceneManager.LoadScene("level_2_crypto"); 
+        SceneManager.LoadScene(SceneName); 
     }
 
 
