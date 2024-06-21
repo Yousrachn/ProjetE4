@@ -1636,6 +1636,7 @@ MonoBehaviour:
   - {fileID: 407799599}
   - {fileID: 1355066757}
   correctPassword: 7643
+  SceneName: level_2_crypto
 --- !u!114 &1770419823
 MonoBehaviour:
   m_ObjectHideFlags: 0

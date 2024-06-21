@@ -1636,13 +1636,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 724510174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15ab10806ce655a4489f207e367edb84, type: 3}
+  m_Script: {fileID: 11500000, guid: cbbbfaf76b5222e4ba63c18cd5b85043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextSceneName: Mdp2
   dialogueText: {fileID: 1902189560}
   dialogues:
-  - "J'espere pour toi que tu as r\xE9ussi \xE0 d\xE9crypter le message !"
-  - "Donne moi le code et tu auras ta r\xE9compense."
+  - "J'esp\xE8re pour toi que tu as r\xE9ussi \xE0 d\xE9crypter le message !"
+  - "Donne-moi le code et tu auras ta r\xE9compense."
   dialogueBackground: {fileID: 557722821}
   interactionText: {fileID: 1983285989}
 --- !u!1 &758227717
@@ -3777,6 +3778,7 @@ MonoBehaviour:
     - "N'oublie pas, la cl\xE9 que tu as trouver dans le niveau pr\xE9c\xE9dent \xE9tait
       :"
     - 873461987546137042451897643
+    - 'Petite astuce : Appuie sur C si tu veux copier un texte.'
 --- !u!114 &1281420036
 MonoBehaviour:
   m_ObjectHideFlags: 0
